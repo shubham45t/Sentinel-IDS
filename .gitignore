@@ -1,3 +1,21 @@
 logs/
 .env
 ids/.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# IDE & OS Configuration files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
