@@ -16,6 +16,9 @@ jobs:
       - name: Stop old containers
         run: docker-compose down || true
 
+      - name: Create .env file from Secrets
+        run: echo "${{ secrets.IDS_ENV_FILE }}" > ./ids/.env
+
       - name: Build and start containers
         run: docker-compose up -d --build
 
